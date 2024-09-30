@@ -4,7 +4,10 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print hello
-        run: echo "Hello my first GH action"
+      - name: Print multiple lines
+        run: |
+          echo "Hello my first GH action"
+          echo "Second print"
+          echo "Some other print"
       - name: Print Bye
         run: echo "That's all! Good Bye!"
